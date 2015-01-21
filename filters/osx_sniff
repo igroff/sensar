@@ -1,0 +1,28 @@
+BEGIN { FIELDWIDTHS = "32 18 5 8 3 3 100" }
+{
+  gsub(/^[ ]+/, "", $1);
+  gsub(/[ ]+$/, "", $1);
+  gsub(/^[ ]+/, "", $2);
+  gsub(/[ ]+$/, "", $2);
+  gsub(/^[ ]+/, "", $3);
+  gsub(/[ ]+$/, "", $3);
+  gsub(/^[ ]+/, "", $4);
+  gsub(/[ ]+$/, "", $4);
+  gsub(/^[ ]+/, "", $5);
+  gsub(/[ ]+$/, "", $5);
+  gsub(/^[ ]+/, "", $6);
+  gsub(/[ ]+$/, "", $6);
+  gsub(/^[ ]+/, "", $7);
+  gsub(/[ ]+$/, "", $7);
+  ssid=$1;
+  bssid=$2;
+  rssi=$3;
+  channel=$4;
+  ht=$5;
+  cc=$6;
+  security=$7;
+  # skip the header line
+  if (NR != 1) {
+    printf("%s %s %s %s %s %s %s\n", ssid, bssid, rssi, channel, ht, cc, security);
+  }
+}

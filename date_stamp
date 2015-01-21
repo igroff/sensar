@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+while read line
+do
+  printf "%s %s\n" "[`date +"%x %X %z"`]" "$line"
+done < /dev/fd/0
+
