@@ -10,3 +10,4 @@ Also=pusher-queue.path
 Also=pusher.service
 Also=sensar.timer
 Also=sniffer.service
+WantedBy=multi-user.target
