@@ -1,0 +1,6 @@
+[Unit]
+Description=the timer that controls execution of sensar
+
+[Timer]
+OnActiveSec=5min
+Unit=sniffer.service

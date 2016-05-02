@@ -1,3 +1,4 @@
 [Install]
 Wants=pusher-queue.path
 Wants=pusher.service
+Watns=sniffer.service
