@@ -4,3 +4,9 @@ Wants=pusher-queue.path
 Wants=pusher.service
 Wants=sensar.timer
 Wants=sniffer.service
+
+[Install]
+Also=pusher-queue.path
+Also=pusher.service
+Also=sensar.timer
+Also=sniffer.service
