@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+cp --preserve -R ./overlay/* /
+systemctl daemon-reload
+systemctl start sensar.target

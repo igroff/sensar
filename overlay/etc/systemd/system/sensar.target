@@ -1,0 +1,3 @@
+[Install]
+Wants=pusher-queue.path
+Wants=pusher.service

@@ -1,0 +1,11 @@
+[Unit]
+Description=Responsible for pushing queued sensar messages up to the 'cloud'
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/push-queued-messages
+
+[Install]
+WantedBy=sensar.target

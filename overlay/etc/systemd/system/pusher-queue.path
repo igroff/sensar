@@ -1,0 +1,7 @@
+[Unit]
+Description=Manages the pusher queue on disk
+
+[Path]
+DirectoryNotEmpty=/run/sensar/pusher-queue
+Unit=pusher.service
+MakeDirectory=true

@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+rm /run/sensar/pusher-queue/*
+touch /run/sensar/pusher-queue/pants
+ls /run/sensar/pusher-queue/
