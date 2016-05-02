@@ -2,4 +2,5 @@
 After=network.target
 Wants=pusher-queue.path
 Wants=pusher.service
+Wants=sensar.timer
 Wants=sniffer.service
