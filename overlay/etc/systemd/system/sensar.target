@@ -1,4 +1,4 @@
-[Install]
+[Unit]
 Wants=pusher-queue.path
 Wants=pusher.service
 Wants=sniffer.service
