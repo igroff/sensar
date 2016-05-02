@@ -2,5 +2,5 @@
 Description=the timer that controls execution of sensar
 
 [Timer]
-OnActiveSec=5min
+OnCalendar=*-*-* *:*:00
 Unit=sniffer.service

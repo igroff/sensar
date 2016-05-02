@@ -2,4 +2,5 @@
 Description=Collects data for sensar.target
 
 [Service]
-ExecStart=/usr/bin/sniff
+Type=oneshot
+ExecStart=-/usr/bin/sniff
