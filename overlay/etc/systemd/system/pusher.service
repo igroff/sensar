@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/push-queued-messages
+ExecStart=-/usr/bin/push-queued-messages
 
 [Install]
 WantedBy=sensar.target
