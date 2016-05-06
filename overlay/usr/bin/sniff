@@ -5,7 +5,9 @@ OSX_CMD='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current
 
 if which ${OSX_CMD} > /dev/null 2>&1; then
   ${OSX_CMD} -s
+elif which iwlist > /dev/null 2>&1 ; then
+  sudo iwlist wlan0 scan | grep ESSID:
 else
-  echo I\'ve got no idea what\'s going on
+  echo "I've got no idea what I'm doing"
   exit 1
 fi
